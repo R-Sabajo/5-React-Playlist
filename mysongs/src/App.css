@@ -84,8 +84,9 @@ button:hover {
   text-shadow: 0 0 3px white;
   padding: 0px 10px;
   border-radius: 20px;
-  font-family: var(--font4);
-  font-size: 0.8em;
+  font-family: var(--font2);
+  font-size: 1em;
+  letter-spacing: 0.1em;
   margin-left: 20px;
 }
 
@@ -131,7 +132,7 @@ button:active {
   font-family: var(--font4);
   font-size: 0.8em;
   font-weight: 500;
-  background-color: rgba(26, 26, 26, 0.746);
+  background-color: rgba(39, 39, 39, 0.808);
   color: white;
   text-shadow: 0 0 3px white;
   border: 1px solid rgba(248, 248, 255, 0.5);
@@ -188,8 +189,9 @@ tr {
 td {
   height: 40px;
   padding-left: 15px;
-  font-family: var(--font1);
+  font-family: var(--font2);
   font-size: 1.3em;
+  letter-spacing: 0.05em;
   font-weight: 500;
 }
 
@@ -217,9 +219,9 @@ td {
 
 .Footer {
   text-align: right;
-  font-weight: 400;
-  font-family: var(--font4);
-  font-size: 1em;
+  font-weight: 600;
+  font-family: var(--font2);
+  font-size: 1.2em;
   letter-spacing: 0.1em;
   text-shadow: 0 0 5px white;
   border: 1px solid grey;
