@@ -47,6 +47,8 @@ tr {
   height: 35px;
   font-size: 1.2em;
   padding-left: 30px;
+  background-color: rgba(179, 179, 179, 0.219);
+  color: white;
 }
 
 td {
@@ -272,24 +274,14 @@ input:focus {
 
 @media only screen and (max-width: 1050px) {
   .Header {
-    text-align: center;
     font-size: 1.5em;
-    padding: 10px;
+
     width: 90vw;
-    margin: auto;
-    margin-top: 3%;
   }
 
   .Songform {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    height: auto;
     width: 90vw;
-    color: black;
-    margin: auto;
-    padding: 20px;
-    border-radius: 20px;
     font-size: 1.1em;
   }
 
@@ -314,23 +306,28 @@ input:focus {
   }
 
   .table {
-    width: 80vw;
-    background-color: rgba(0, 0, 0, 0.555);
-    border: 1px solid whitesmoke;
-    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.507);
-    margin: auto;
-    color: rgba(255, 255, 255, 0.794);
-    text-align: left;
+    width: 70vw;
     font-size: x-small;
   }
 
+  button {
+    margin: 5px 10px 0px 0px;
+  }
+
+  td {
+    font-size: 1.4em;
+    align-items: center;
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgba(31, 31, 31, 0.808);
+    color: white;
+  }
+
   .del-btn {
-    font-family: var(--font4);
     font-size: 0.6em;
-    background-color: rgba(61, 0, 0, 0.746);
-    text-shadow: none;
     height: 25px;
     width: 25px;
-    margin: 0px 15px;
+    margin: 0px 10px 0px 20px;
   }
 }
