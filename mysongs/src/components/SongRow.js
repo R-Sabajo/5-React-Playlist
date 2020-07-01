@@ -3,7 +3,6 @@ import React from 'react';
 class SongRow extends React.Component {
   render() {
     const song = this.props.song;
-    const deleteSong = this.props.handleDeleteSong;
     return (
       <tr className="song-row">
         <td>{song.title}</td>
@@ -15,7 +14,7 @@ class SongRow extends React.Component {
             className="del-btn"
             onClick={() => this.props.deleteSong(song.id)}
           >
-            x
+            -
           </button>
         </td>
       </tr>

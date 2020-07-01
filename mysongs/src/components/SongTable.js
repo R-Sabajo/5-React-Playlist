@@ -21,31 +21,48 @@ export class SongTable extends Component {
           <tr className="song-header">
             <th className="song-row__item">
               <span>Title</span>
-              <button onClick={() => this.props.sortSongs('titleA')}>Az</button>
-              <button onClick={() => this.props.sortSongs('titleZ')}>Za</button>
+              <div>
+                <button onClick={() => this.props.sortSongs('titleA')}>
+                  A
+                </button>
+                <button onClick={() => this.props.sortSongs('titleZ')}>
+                  Z
+                </button>
+              </div>
             </th>
             <th className="song-row__item">
               <span>Artist</span>
-              <button onClick={() => this.props.sortSongs('artistA')}>
-                Az
-              </button>
-              <button onClick={() => this.props.sortSongs('artistZ')}>
-                Za
-              </button>
+              <div>
+                <button onClick={() => this.props.sortSongs('artistA')}>
+                  A
+                </button>
+                <button onClick={() => this.props.sortSongs('artistZ')}>
+                  Z
+                </button>
+              </div>
             </th>
             <th className="song-row__item">
               <span>Genre</span>
-              <button onClick={() => this.props.sortSongs('genreA')}>Az</button>
-              <button onClick={() => this.props.sortSongs('genreZ')}>Za</button>
+              <div>
+                <button onClick={() => this.props.sortSongs('genreA')}>
+                  A
+                </button>
+                <button onClick={() => this.props.sortSongs('genreZ')}>
+                  Z
+                </button>
+              </div>
             </th>
             <th className="song-row__item">
               <span>Rating</span>
-              <button onClick={() => this.props.sortSongs('rating5')}>
-                5-1
-              </button>
-              <button onClick={() => this.props.sortSongs('rating1')}>
-                1-5
-              </button>
+
+              <div>
+                <button onClick={() => this.props.sortSongs('rating5')}>
+                  5
+                </button>
+                <button onClick={() => this.props.sortSongs('rating1')}>
+                  1
+                </button>
+              </div>
             </th>
           </tr>
         </thead>
