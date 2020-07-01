@@ -80,9 +80,9 @@ class SongOverview extends Component {
         : sort === 'artistZ'
         ? songs.sort((a, b) => b.artist.localeCompare(a.artist))
         : sort === 'genreA'
-        ? songs.sort((a, b) => a.genre.localeCompare(b.artist))
+        ? songs.sort((a, b) => a.genre.localeCompare(b.genre))
         : sort === 'genreZ'
-        ? songs.sort((a, b) => b.genre.localeCompare(a.artist))
+        ? songs.sort((a, b) => b.genre.localeCompare(a.genre))
         : sort === 'rating1'
         ? songs.sort((a, b) => a.rating.localeCompare(b.rating))
         : sort === 'rating5'
