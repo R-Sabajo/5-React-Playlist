@@ -1,0 +1,263 @@
+:root {
+  box-sizing: border-box;
+
+  --font1: 'Shadows Into Light', cursive;
+  --font2: 'Shadows Into Light Two', cursive;
+  --font3: 'Cinzel Decorative', cursive;
+  --font4: 'Monoton', cursive;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  background-image: url(./images/tapes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.song-overview {
+  background-color: rgba(26, 26, 26, 0.507);
+}
+.Header {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  font-family: var(--font4);
+  text-shadow: 0 0 15px white;
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.507);
+  letter-spacing: 0.2em;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  background-color: rgba(61, 0, 0, 0.493);
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
+  width: 90vw;
+  margin: auto;
+  margin-top: 3%;
+}
+
+button {
+  font-family: var(--font4);
+  font-size: 0.5em;
+  height: 37px;
+  width: 37px;
+  margin-right: 10px;
+  background-color: rgba(26, 26, 26, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  font-weight: 400;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  text-shadow: 0px 0px 1px 1px white;
+  color: ghostwhite;
+  border: 1px solid ghostwhite;
+  box-shadow: 0px 0px 2px 0.5px ghostwhite;
+}
+
+.Songform {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+  width: 90vw;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.507);
+  color: black;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 1.2em;
+}
+
+.Songform input {
+  height: 30px;
+  width: 180px;
+  border: 1px solid rgba(248, 248, 255, 0.5);
+  background-color: rgba(26, 26, 26, 0.507);
+  color: ghostwhite;
+  text-shadow: 0 0 3px white;
+  padding: 0px 10px;
+  border-radius: 20px;
+  font-family: var(--font4);
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+
+::placeholder {
+  color: ghostwhite;
+}
+
+#add-song-btn {
+  border: 1px solid rgba(248, 248, 255, 0.5);
+  color: ghostwhite;
+  height: 80px;
+  width: 80px;
+  font-size: 0.9em;
+  margin-left: 20px;
+}
+
+#add-song-btn:hover,
+#add-song-btn:focus,
+button:focus,
+button:hover {
+  text-shadow: 0px 0px 15px 1px white;
+  border: 1px solid ghostwhite;
+  box-shadow: 0px 0px 7px 0.5px ghostwhite;
+}
+
+#add-song-btn:hover {
+  animation: jiggle 1000ms linear;
+  animation-iteration-count: infinite;
+}
+
+#add-song-btn:active,
+button:active {
+  animation: none;
+  background-color: black;
+  text-shadow: 0px 0px 8px 0px white;
+  border: 1px solid ghostwhite;
+  box-shadow: 0px 0px 7px 1px ghostwhite;
+}
+
+#rating {
+  height: 35px;
+  width: 130px;
+  font-family: var(--font4);
+  font-size: 0.8em;
+  font-weight: 500;
+  background-color: rgba(26, 26, 26, 0.746);
+  color: white;
+  text-shadow: 0 0 3px white;
+  border: 1px solid rgba(248, 248, 255, 0.5);
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+
+#rating:focus,
+.Songform input:focus {
+  outline: none;
+  text-shadow: 0px 0px 10px 1px white;
+  border: 1px solid ghostwhite;
+  box-shadow: 0px 0px 2px 0.5px ghostwhite;
+}
+
+input:focus {
+  outline: none;
+}
+
+.table {
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.555);
+  border: 1px solid whitesmoke;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.794);
+  text-align: left;
+}
+
+.song-row__item {
+  background-color: rgba(61, 0, 0, 0.746);
+  color: rgba(245, 245, 245, 0.815);
+  font-size: 1.1em;
+  font-family: var(--font4);
+  padding-left: 10px;
+  height: 40px;
+}
+
+.song-row__item span {
+  padding-right: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(31, 31, 31, 0.5);
+  color: white;
+}
+
+tr {
+  height: 35px;
+  font-size: 1.2em;
+  padding-left: 30px;
+}
+
+td {
+  height: 40px;
+  padding-left: 15px;
+  font-family: var(--font1);
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.del-btn-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.del-btn {
+  font-size: 0.6em;
+  background-color: rgba(139, 0, 0, 0.472);
+  text-shadow: none;
+  height: 35px;
+  width: 35px;
+}
+
+.del-btn:hover {
+  animation: jiggle 1000ms linear;
+  animation-iteration-count: infinite;
+  text-shadow: 0px 0px 3px white;
+  border: 1px solid ghostwhite;
+  box-shadow: 0px 0px 2px 0.5px ghostwhite;
+}
+
+.Footer {
+  text-align: right;
+  font-weight: 400;
+  font-family: var(--font4);
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 5px white;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  background-color: rgba(61, 0, 0, 0.5);
+  color: whitesmoke;
+  padding: 15px;
+  border-radius: 0px 0px 20px 20px;
+  width: 90vw;
+  margin: auto;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(0px);
+  }
+  30% {
+    transform: translate(5px, 0px);
+  }
+  35% {
+    transform: translate(-5px, -3px);
+  }
+  40% {
+    transform: translate(10px, -3px);
+  }
+  45% {
+    transform: translate(-5px, 2px);
+  }
+  50% {
+    transform: translate(5px, 2px);
+  }
+  55% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
