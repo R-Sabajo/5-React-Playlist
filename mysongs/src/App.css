@@ -237,6 +237,7 @@ input:focus {
   border-radius: 0px 0px 20px 20px;
   width: 90vw;
   margin: auto;
+  margin-bottom: 3%;
 }
 
 @keyframes jiggle {
@@ -266,5 +267,70 @@ input:focus {
   }
   100% {
     transform: translate(0px);
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .Header {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    width: 90vw;
+    margin: auto;
+    margin-top: 3%;
+  }
+
+  .Songform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 90vw;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.1em;
+  }
+
+  .Songform input {
+    padding-left: 15px;
+    height: 30px;
+    width: 240px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  #add-song-btn {
+    height: 80px;
+    width: 80px;
+    margin: 10px 0px;
+  }
+
+  #rating {
+    height: 35px;
+    width: 180px;
+    padding-left: 35px;
+    margin: 5px 0px;
+  }
+
+  .table {
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.555);
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.507);
+    margin: auto;
+    color: rgba(255, 255, 255, 0.794);
+    text-align: left;
+    font-size: x-small;
+  }
+
+  .del-btn {
+    font-family: var(--font4);
+    font-size: 0.6em;
+    background-color: rgba(61, 0, 0, 0.746);
+    text-shadow: none;
+    height: 25px;
+    width: 25px;
+    margin: 0px 15px;
   }
 }

@@ -34,8 +34,12 @@ class SongOverview extends Component {
       .catch(error => console.log(error));
   }
 
-  async componentDidMount() {
-    this.getSongs();
+  componentDidMount() {
+    this.timerID = setInterval(() => this.getSongs(), 3000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
   }
 
   handleAddSong(song) {
