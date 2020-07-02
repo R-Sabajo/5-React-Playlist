@@ -51,15 +51,15 @@ class SongOverview extends Component {
     };
     fetch(`${apiUrl}.json`, request)
       .then(response => response.json())
-      .then(data => {
+      .then(res => {
         this.getSongs();
       })
       .catch(error => console.log(error));
   }
 
   handleDeleteSong(id) {
-    const baseUrl = 'https://rama-sabajo.firebaseio.com';
-    const apiUrl = `${baseUrl}/songs/${id}.json`;
+    const url = 'https://rama-sabajo.firebaseio.com';
+    const apiUrl = `${url}/songs/${id}.json`;
     fetch(apiUrl, { method: 'DELETE' })
       .then(response => response.json())
       .then(data => {

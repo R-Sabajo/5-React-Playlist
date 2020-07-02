@@ -14,7 +14,7 @@ class SongRow extends React.Component {
             className="del-btn"
             onClick={() => this.props.deleteSong(song.id)}
           >
-            -
+            <span>-</span>
           </button>
         </td>
       </tr>

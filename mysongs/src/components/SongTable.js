@@ -53,7 +53,7 @@ export class SongTable extends Component {
               </div>
             </th>
             <th className="song-row__item">
-              <span>Rating</span>
+              <span className="rating-header">Rating</span>
 
               <div>
                 <button onClick={() => this.props.sortSongs('rating5')}>
