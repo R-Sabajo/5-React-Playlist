@@ -155,7 +155,7 @@ button:hover {
 }
 
 #add-song-btn:hover {
-  animation: jiggle 1000ms linear;
+  animation: jumpy 700ms linear;
   animation-iteration-count: infinite;
 }
 
@@ -300,6 +300,27 @@ input:focus {
   }
   100% {
     transform: translate(0px);
+  }
+}
+
+@keyframes jumpy {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(0px, -6px);
+  }
+  50% {
+    transform: translate(0px, -7px);
+  }
+  80% {
+    transform: translate(0px, -5px);
+  }
+  90% {
+    transform: translate(0px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 
