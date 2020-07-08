@@ -212,6 +212,7 @@ input:focus {
   font-size: 1.1em;
   font-family: var(--font4);
   padding-left: 10px;
+  padding-top: 5px;
   height: 40px;
 }
 
@@ -236,7 +237,7 @@ input:focus {
 }
 
 .del-btn span {
-  font-family: var(--font4);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3em;
   font-weight: 700;
   color: white;
@@ -252,6 +253,10 @@ input:focus {
   height: 25px;
   width: 25px;
   transition: all 250ms ease-in-out;
+}
+
+.del-btn span:hover {
+  color: white;
 }
 
 .Footer {
@@ -347,7 +352,7 @@ input:focus {
   #add-song-btn {
     height: 80px;
     width: 80px;
-    margin: 10px 0px;
+    margin: 20px 0px 10px 0px;
   }
 
   #rating {
